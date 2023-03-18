@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="menu">
+        <button class="boton-menu"><i class="fas fa-bars"></i></button>
+        <div class="menu-container">
+            <button type="button" class="btn-add-list">Crear nueva lista</button>
+            <div class="lista-menu">
+              <ul class="ul-menu">
+                <li>
+                    <form>
+                        <input type="text" class="item-menu" value="Lista de tareas 1" id="menu1">
+                        <button type="button" class="btn-ok"><i class="fa-solid fa-check"></i></button>
+                        <button type="button" class="btn-del-menu"><i class="fa-solid fa-xmark"></i></button>
+                    </form>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+                <div  class="sector-logo">
+                    <h3>Tudú Tudú</h3><img src="./panterarosa.svg" alt="Logo">
+                </div>
+                <p>Creado por Roberto Martín Bruzzoni @2023</p>
+                <div>
+                    <a href="https://github.com/BruzzoniR/">Github</a>
+                    <a href="https://www.linkedin.com/in/roberto-bruzzoni/">Linkedin</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <div class="container" id="container1">
+            <h1 class="titulo-lista" id="lista1">Listas de tareas 1</h1>
+            <div class="tareasList">
+                <form>
+                    <input type="text" placeholder="Agrega tu tarea.." class="input-tarea">
+                    <button type="button" class="btn-add"><i class="fa-solid fa-plus"></i></button>
+                </form>
+            </div>
+            <div class="li-container">
+                <ul class="ul-listas"></ul>
+            </div>
+            <div class="empty">
+                <p>No tiene tareas pendientes.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/460bdc1fbb.js" crossorigin="anonymous"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="./nav.js" type="module"></script>
+</body>
+</html>

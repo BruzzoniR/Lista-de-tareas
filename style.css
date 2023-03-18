@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Lato, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: lightpink;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.titulo-lista {
+  text-align: center;
+  color: darkred;
+  font-weight: 700;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 30px;
+}
+
+
+.tareasList {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 15px 10px;
+  width: 300rem;
+  outline: none;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  background-color: salmon;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: rgb(206, 116, 86);
+}
+
+.empty {
+  color: darkslategrey;
+  font-weight: 300;
+  font-style: italic;
+}
+
+ul {
+  padding: 0;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+  margin-top: 1rem;
+  border: 0.01rem solid rgba(0, 0, 0, 0.5);
+  color: black;
+  display: flex;
+}
+
+li p {
+  margin: auto;
+  padding: 1rem;
+  width: 300rem;
+  height: auto;
+}
+
+.btn-delete {
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  background-color: rgb(184, 0, 0);
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: rgb(120, 0, 0);
+}
+
+/*----menu desplegable----*/
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  width: 20rem;
+  height: 100vh;
+  background-color: white;
+  color: salmon;
+  visibility: hidden;
+}
+
+.menu-container--visible {
+  visibility: visible;
+}
+
+.boton-menu {
+  position: absolute;
+  left: 10px; /* pasar a rigth:10px cuando se clickee en JS*/
+  top: 10px;
+  border: none;
+  background-color: white;
+  font-size: 1.3rem;
+  color: salmon;
+  z-index: 1;
+}
+
+.lista-menu {
+  margin-top: 5rem;
+  position: absolute;
+  right: 3rem;
+}
+
+.lista-menu li {
+  border: none;
+}
+
+.item-menu {
+  width: auto;
+  border: none;
+}
+
+.btn-ok {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background-color: teal;
+  color: white;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-ok:hover {
+  cursor: pointer;
+  background-color: rgb(1, 103, 103);
+}
+
+.btn-del-menu {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background-color: rgb(178, 10, 10);
+  color: white;
+  font-weight: 600;
+  margin-top: auto;
+  margin-left: 1rem;
+  margin-bottom: auto;
+}
+
+.btn-del-menu:hover {
+  cursor: pointer;
+  background-color: rgb(123, 8, 8);
+}
+
+.btn-add-list {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: Helvetica;
+  background-color: salmon;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-add-list:hover {
+  cursor: pointer;
+  background-color: rgb(206, 116, 86);
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  right: 5rem;
+  left: 5rem;
+  bottom: 0.2rem;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sector-logo {
+  font-family: Quicksand, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.sector-logo h3 {
+  margin: auto;
+}
+
+img {
+  width: 2.5rem;
+}
+
+.footer p , .footer a {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 0.6rem;
+}
+
+.footer a {
+  font-size: 0.8rem;
+}
