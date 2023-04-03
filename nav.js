@@ -4,13 +4,10 @@ const listaMenu = document.querySelector("nav .ul-menu");
 const botonMenu = document.querySelector(".boton-menu");
 let tituloLista = document.querySelector(".titulo-lista");
 let itemMenu = document.querySelector(".item-menu");
-let menuContainer = document.querySelector(".menu-container");
+export let menuContainer = document.querySelector(".menu-container");
 let botonOk = document.querySelector(".btn-ok");
 
 let contadorListas = 1;
-const vinculoMenuListas ={
-    menu1: 'lista1'
-}
 
 botonMenu.addEventListener("click",()=>{  //despliegue de barra
 
@@ -81,11 +78,3 @@ btnAddList.addEventListener("click", ()=>{
     listaMenu.appendChild(nuevoLiMenu);
 });
 
-function removeLista(e){
-    const numeroLista = e.target.parentElement.children[0].id.charAt(e.target.parentElement.children[0].id.length - 1);
-    console.log(numeroLista);
-    let listaParaBorrar = document.getElementById(`container${contadorListas}`);
-    listaParaBorrar.remove();
-
-    
-}
