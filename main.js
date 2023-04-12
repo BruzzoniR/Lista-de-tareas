@@ -3,12 +3,14 @@ import { menuContainer } from "./nav.js";
 const historial = [];
 
 main.addEventListener("click", (e)=>{
+  e.preventDefault();
+
   if(e.target.className=="btn-add"){
     const addBtn = e.target;
 
-    addBtn.addEventListener("click", (e)=>{
+    //addBtn.addEventListener("click", (e)=>{
 
-      e.preventDefault();
+      //e.preventDefault();
       const input = e.target.parentElement.firstChild.parentNode[0];
       const text = input.value;
       const ul = e.target.parentElement.parentElement.parentElement.children[2].children[0];
@@ -31,7 +33,7 @@ main.addEventListener("click", (e)=>{
     
       }
     
-    }); 
+    //}); 
     
     function addDeleteBtn () {
       
